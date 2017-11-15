@@ -18,7 +18,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
-      config: path.join(__dirname, '../src/config/default.js'),
+     
     },
   },
   stats: {
@@ -77,7 +77,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg|ico)/,
+        test: /\.(jpe?g|png|svg|gif|ico)/,
         use: {
           loader: 'file-loader?name=[name].[ext]&publicPath=static/images/&outputPath=images/',
         },
@@ -101,7 +101,6 @@ module.exports = {
       disable: false,
       allChunks: true,
     }),
-
       // generates index.html with js/css source references
     new HtmlWebpackPlugin({
       template: './src/index.html',

@@ -1,22 +1,24 @@
 {
-  "presets": [
+    "presets":
     [
-      "babel-preset-env",
-      {
-        "modules": false
-      }
+        [
+        "babel-preset-env",
+        {
+            "modules": false
+        }
     ],
     "react",
     "stage-2"
-  ],
-  "plugins": [
-    "transform-runtime"
-  ],
-  "env": {
-    "development": {
-      "plugins": [
-        "react-hot-loader/babel"
-      ]
+    ],
+    "plugins": [
+        "transform-runtime"
+    ],
+    "env":{
+        "development":{
+            "plugins": [
+                "react-hot-loader/babel"
+            ]
+        }
     }
-  }
+
 }

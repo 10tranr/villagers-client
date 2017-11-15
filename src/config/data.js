@@ -1,80 +1,34 @@
-function data() {
-  return {
-    sites: [
-      {
-        "name": 'Lexicon',
-        "notification": 0,
-        "color": "#5521a8"
-      },
-      {
-        "name": 'JIRA',
-        "notification": 2,
-        "color": "#456bb7"
-      },
-      {
-        "name": 'RAAS',
-        "notification": 2,
-        "color": "#FF850A"
-      },
-      {
-        "name": 'Modcat',
-        "notification": 2,
-        "color": "#518234"
-      },
-      {
-        "name": 'Instrument Library',
-        "notification": 2,
-        "color": "#275a7c"
-      },
-      {
-        "name": 'Background Catalog',
-        "notification": 2,
-        "color": "#7c272c"
-      },
-      {
-        "name": 'DISC',
-        "notification": 2,
-        "color": "#FF850A"
-      }
-    ],
-    cards : [
-      {
-          id:'FASDE2341321SD123DFG',
-          date: {
-                  month: 'Dec',
-                  day: '27',
-                  year: '2017'
-              },
-          title: {
-                  priority: 2,
-                  content: 'High Prority'
-              },
-          content: {
-                  description: 'The planned exercise will occur on a date and the DMAMC is expected to support. Contact...',
-                  link: 'card'
-              }
-      },
-      {
-          id:'SDA123FAK414128237D23',
-          date: {
-                  month: 'Jan',
-                  day: '24',
-                  year: '2018'
-              },
-          title: {
-                  priority: 1,
-                  content: 'High Prority'
-              },
-          content: {
-                  description: 'The planned exercise will occur on a date and the DMAMC is expected to support. Contact...',
-                  link: 'card'
-              }
-      }
-    ],
+
+export default  {
+
+    basics: [
+        {
+            header: 'Component',
+            content: [
+                'Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.',
+                'Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen: in React apps, all those are commonly expressed as components.',
+                'React is pretty flexible but it has a single strict rule: All React components must act like pure functions with respect to their props.'
+            ]
+        },
+        {
+            header: '_Container',
+            content: [
+                'Containers can be considered wrappers for Components.  It links reducers (states) and actions (methods) to the component.',
+            ]
+        },        {
+            header: 'Component-reducer',
+            content: [
+                'Reducers will implement actions. It is called after every actions called.  It will receive a payload from action.'
+            ]
+        },
+        {
+            header: 'Component-actions',
+            content: [
+                'Actions provides method prototypes that will be implemented in reducers.  It provides the name of the method and return an action type and payload to the reducer associated with it.'
+            ]
+        }
+    
+    ]
 
 
-
-  }
 }
-
-export default data();

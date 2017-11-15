@@ -1,44 +1,51 @@
-// Uncomment these media queries to add support for larger screens.  Make sure that you're actually testing at these sizes for readability/usability, not just making the UI larger because you think you should!
-//
-// @media (min-width: @screen-xl-min) {
-//   .make-grid(xl);
-// }
-//
-// @media (min-width: @screen-tl-min) {
-//   .make-grid(tl);
-// }
-//
-// .container {
-//     @media (min-width: @screen-xl-min) {
-//         width: @container-xl;
-//     }
-//
-//     @media (min-width: @screen-tl-min) {
-//         width: @container-tl;
-//     }
-// }
+@import "navbar.less";
 
-
-/***** Your Application Specific Code Goes Here *****/
-
-@import url("sidebar.less");
-
-body {
-  max-height: 100%;
+body html {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
-.right {
-  margin-right: 1em;
+.full {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
-.nospace {
-  border-radius: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  line-height: 0;
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-.no-border {
-  border: none !important;
-  border-radius: 0 !important;
+.menu_logo {
+    padding: 0 ;
 }
+
+.menu_logo img {
+    width:160px !important;
+}
+
+.center{
+    text-align: center;
+}
+
+.header{
+    font-size: 10em;
+}
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 1000px;
+    z-index: -1;
+    background: #5e6a71; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 12%, rgba(94, 106, 113, 1) 90%); /*Safari 5.1-6*/
+    background: -o-linear-gradient( bottom, rgba(255, 255, 255, 0) 12%, rgba(94, 106, 113, 1) 90%); /*Opera 11.1-12*/
+    background: -moz-linear-gradient( bottom, rgba(255, 255, 255, 0) 12%, rgba(94, 106, 113, 1) 90%); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 12%, rgba(94, 106, 113, 1) 90%); /*Standard*/
+}
+
